@@ -17,6 +17,8 @@ export default buildConfig({
     user: Users.slug,
     bundler: webpackBundler(),
   },
+
+  csrf: [process.env.SERVER_URL],
   editor: slateEditor({}),
   collections: [Users, Pages, Media, Services],
   typescript: {
