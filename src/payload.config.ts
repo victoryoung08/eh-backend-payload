@@ -12,6 +12,7 @@ import { Media } from "./collections/Media";
 import { Services } from "./collections/Services";
 
 export default buildConfig({
+  serverURL: process.env.SERVER_URL,
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
