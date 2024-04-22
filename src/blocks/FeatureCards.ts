@@ -8,19 +8,24 @@ export const FeatureCards: Block = {
   },
   fields: [
     {
+      name: "badgeText",
+      type: "text",
+      label: "Badge Text",
+    },
+    {
       name: "heading",
       type: "text",
       label: "Heading",
     },
     {
-      name: "body",
+      name: "description",
       type: "text",
-      label: "Body Text",
+      label: "Description Text",
     },
     {
-      name: "cards",
+      name: "featureGrid",
       type: "array",
-      label: "Cards",
+      label: "Feature Grid",
       fields: [
         {
           name: "heading",
@@ -28,9 +33,9 @@ export const FeatureCards: Block = {
           label: "Heading",
         },
         {
-          name: "body",
+          name: "description",
           type: "text",
-          label: "Body",
+          label: "Description",
         },
       ],
     },

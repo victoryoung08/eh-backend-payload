@@ -2,6 +2,7 @@ import { CollectionConfig } from "payload/types";
 import { HeroBlock } from "../blocks/HeroBlock";
 import { FeatureCards } from "../blocks/FeatureCards";
 import { CenteredCTA } from "../blocks/CenteredCTA";
+import { ImageWithText } from "../blocks/ImageWithText";
 // import { CenteredCTA } from "../blocks/CenteredCTA";
 
 export const Services: CollectionConfig = {
@@ -29,7 +30,7 @@ export const Services: CollectionConfig = {
       name: "layout",
       label: "Layout",
       type: "blocks",
-      blocks: [HeroBlock, FeatureCards, CenteredCTA],
+      blocks: [HeroBlock, FeatureCards, CenteredCTA, ImageWithText],
     },
   ],
 };

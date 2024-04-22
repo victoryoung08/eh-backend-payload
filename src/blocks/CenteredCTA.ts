@@ -8,47 +8,38 @@ export const CenteredCTA: Block = {
   },
   fields: [
     {
+      name: "badgeText",
+      type: "text",
+      label: "Badge Text",
+    },
+    {
       name: "heading",
       type: "text",
       label: "Heading",
     },
     {
-      name: "body",
+      name: "description",
       type: "text",
-      label: "Body Text",
+      label: "Description Text",
     },
     {
-      name: "list",
-      type: "array",
-      label: "List",
-      fields: [
-        {
-          name: "item",
-          type: "text",
-          label: "List Item Name",
-        },
-      ],
-    },
-    {
-      name: "primaryButtonText",
-      type: "text",
-      label: "Primary Button Text",
-    },
-    {
-      name: "primaryBuittonStyle",
+      name: "alignment",
       type: "select",
-      label: "Primary Button Style",
+      label: "Alignment",
       options: [
         {
-          label: "default",
-          value: "default",
+          label: "left",
+          value: "left",
         },
         {
-          label: "secondary",
-          value: "secondary",
+          label: "center",
+          value: "center",
+        },
+        {
+          label: "right",
+          value: "right",
         },
       ],
     },
-    { name: "primaryButtonLink", type: "text", label: "Primary Button Link" },
   ],
 };
